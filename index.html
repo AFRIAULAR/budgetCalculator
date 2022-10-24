@@ -9,10 +9,63 @@
 </head>
 <body>
     <header>
-
+        <nav class="flex justify-between  w-full bg-[#84b4b4]">
+            <ul class="flex items-center m-auto justify-center ">
+              <li class="m-5 text-[#fff1cd]">
+                <a href="#">Balance</a>
+              </li>
+              <li class="m-5 text-[#fff1cd]">
+                <a href="#">Categorías</a>
+              </li>
+              <li class="m-5 text-[#fff1cd]">
+                <a href="#">Reportes</a>
+              </li>
+            </ul>
+          </nav>
     </header>
     <main>
-
+        <section>
+          <div id="balanceContainer">
+             <h2>Balance</h2>
+            <div class="grid grid-cols-2 gap-2">
+            <p>Ganancias</p><p>+$0</p>
+            <p>Gastos</p><p>-$0</p>
+            <p>Total</p><p>$0</p>
+            </div> 
+          </div>
+        </section>
+        <section>
+          <div id="filterContainer">
+            <h3 id="filterTitle">Filtros</h3>
+            <a href="#">Ocultar filtros</a>
+          </div>
+          <form id="filterForm">
+            <div id="operationTypeContainer">
+             <label for="type" class="block">Tipo</label>
+              <select class="form-select block w-1/6 mt-1" type="select" name="type" id="operationType">
+              <option>Todos</option>
+              <option>Gasto</option>
+              <option>Categoría</option>
+              </select>
+            </div>
+            <div id="categoryFilterContainer">
+              <label for="category" class="block">Categoría</label>
+              <select class="form-select block w-1/6 mt-1" type="select" name="category" id="categoryFilter">
+              <option>Todas</option>
+              <option>Comida</option>
+              <option>Servicios</option>
+              <option>Salidas</option>
+              <option>Educación</option>
+              <option>Transporte</option>
+              <option>Trabajo</option>
+              </select>
+            </div>
+            <div id="dateOperationContainer">
+              <label for="date" class="block">Desde</label>
+              <input type="date" class="form-input">
+            </div>
+          </form>
+        </section>
     </main>
     <footer>
 
